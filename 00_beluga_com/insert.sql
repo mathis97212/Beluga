@@ -1,0 +1,1 @@
+INSERT INTO users VALUES ('johndoe', 'john@beluga.uk', 'jspjpp');
