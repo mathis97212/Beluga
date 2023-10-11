@@ -1,6 +1,6 @@
 CREATE TABLE company
 (
-    nom TEXT,
-    id INT,
+    nom VARCHAR(255) NOT NULL,
+    id INT PRIMARY KEY,
     description TEXT,
 );
