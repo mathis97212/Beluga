@@ -21,7 +21,7 @@ CREATE TABLE beluga_game_weapon
     meta JSON,
     creation_date TIMESTAMP,
     attack INT,
-    defense INT,
+    defense INT
 );
 
 CREATE TABLE beluga_game_session
@@ -34,5 +34,5 @@ CREATE TABLE beluga_game_session
     creation_date DEFAULT,
     creation_date CURRENT_TIMESTAMP,
     last_action DATETIME,
-    list_entity JSON,
+    list_entity JSON
 );
