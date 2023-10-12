@@ -1,6 +1,6 @@
 CREATE TABLE beluga_game_entity
 (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     hp INT,
     mp INT,
@@ -15,7 +15,7 @@ CREATE TABLE beluga_game_entity
 
 CREATE TABLE beluga_game_weapon
 (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     type VARCHAR(255) NOT NULL,
     meta JSON,
@@ -26,7 +26,7 @@ CREATE TABLE beluga_game_weapon
 
 CREATE TABLE beluga_game_session
 (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     type VARCHAR(255) NOT NULL,
     meta JSON,
