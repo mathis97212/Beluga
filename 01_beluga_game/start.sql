@@ -10,6 +10,7 @@ CREATE TABLE beluga_game_entity
     last_action TIMESTAMP,
     last_ip_use VARCHAR(255) NOT NULL,
     weapon_used INT,
+    CONSTRAINT fk_weapon_used
     FOREIGN KEY (weapon_used) REFERENCES beluga_game_weapon(id)
 );
 
