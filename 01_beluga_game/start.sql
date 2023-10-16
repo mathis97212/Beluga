@@ -9,8 +9,7 @@ CREATE TABLE beluga_game_entity
     creation_date TIMESTAMP,
     last_action TIMESTAMP,
     last_ip_use VARCHAR(255),
-    weapon_used INT,
-    FOREIGN KEY (weapon_used) REFERENCES beluga_game_weapon(id)
+    weapon_used INT REFERENCES beluga_game_weapon(id)
 );
 
 CREATE TABLE beluga_game_weapon
