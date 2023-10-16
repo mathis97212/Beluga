@@ -14,7 +14,7 @@ CREATE TABLE beluga_game_entity
 
 CREATE TABLE beluga_game_weapon
 (
-    id AUTO_INCREMENT PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255),
     type VARCHAR(255),
     meta JSON,
@@ -25,7 +25,7 @@ CREATE TABLE beluga_game_weapon
 
 CREATE TABLE beluga_game_session
 (
-    id AUTO_INCREMENT PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255),
     meta JSON,
     creation_date TIMESTAMP,
